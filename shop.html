@@ -26,17 +26,44 @@
       
       <h1>Магазин готовых шаблонов</h1>
       
-      <section>
-        <!-- price -->
+      <section class="price">
+        <h2 class="visually-hidden">Стоимость товара</h2>
+        <h3 class="price-name">Стоимость:</h3>
+        <p>от</p>
+        <p>до</p>
       </section>
       
-      <section>
-        <!-- sort -->
+      <section class="sort">
+          <h2 class="visually-hidden">Сортировка товара</h2>
+          <h3 class="sort-name">Сортировать:</h3>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-current">по цене</li>
+            <li>по типу</li>
+            <li>по названию</li>
+          </ul>
       </section>
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <p class="filters-grid">
+          <h3 class="filters-grid-name">Сетка:</h3>
+          <ul class="filters-grid-list">
+            <li class="filters-grid-current filters-grid-item">Адаптивная</li>
+            <li class="filters-grid-item">Фиксированная</li>
+            <li class="filters-grid-item">Резиновая</li>
+          </ul>
+        </p>
+        <p class="filters-features">
+          <h3 class="filters-name">Особенности:</h3>
+          <ul class="filters-features-list">
+            <li class="filters-features-current filters-features-item">Слайдер</li>
+            <li class="filters-features-item">Блок преимуществ</li>
+            <li class="filters-features-current filters-features-item">Новости</li>
+            <li class="filters-features-item">Галерея</li>
+            <li class="filters-features-item">Корзина</li>
+          </ul>
+        </p>
+        <a class="button" href="#">Показать</a>
       </section>
 
       <section class="catalog">
@@ -123,9 +150,14 @@
         </ul>
       </section>
 
-        <section class="nerds-map">
+      <section class="nerds-map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
-          <!-- Как до нас добраться -->
+          <h3 class="nerds-map-name">NЁRDS DESIGN STUDIO</h3>
+          <p class="nerds-map-content">
+              <span>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</span>
+              <span>тел. +7 (812) 275-75-75</span>
+              <a class="button" href="#">Напишите нам</a>
+          </p>
         </section>
 
     </main>
