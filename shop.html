@@ -8,16 +8,16 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a href="index.html" class="main-header-logo">
-          <img src="img/index-logo.svg" width="160" height="67" alt="Логотип дизайн-студии «Nerds»">
+          <img src="img/nerds-logo.svg" width="160" height="67" alt="Логотип дизайн-студии «Nerds»">
         </a>
         <ul class="site-navigation">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
           <li class="site-navigation-current"><a href="shop.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="shopping-basket">Корзина</li>
+          <li class="shopping-basket"><a href="#">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -48,22 +48,50 @@
         <p class="filters-grid">
           <h3 class="filters-grid-name">Сетка:</h3>
           <ul class="filters-grid-list">
-            <li class="filters-grid-current filters-grid-item">Адаптивная</li>
-            <li class="filters-grid-item">Фиксированная</li>
-            <li class="filters-grid-item">Резиновая</li>
+            <label>
+              <li class="filters-grid-current filters-grid-item">Адаптивная</li>
+              <input type="radio" name="adaptive-grid" id="grid" checked>
+            </label>
+            <label>
+              <li class="filters-grid-item">Фиксированная</li>
+              <input type="radio" name="adaptive-grid" id="fixed">
+            </label>
+            <label>
+              <li class="filters-grid-item">Резиновая</li>
+              <input type="radio" name="adaptive-grid" id="rubber">
+            </label>
           </ul>
         </p>
+
         <p class="filters-features">
           <h3 class="filters-name">Особенности:</h3>
           <ul class="filters-features-list">
-            <li class="filters-features-current filters-features-item">Слайдер</li>
-            <li class="filters-features-item">Блок преимуществ</li>
-            <li class="filters-features-current filters-features-item">Новости</li>
-            <li class="filters-features-item">Галерея</li>
-            <li class="filters-features-item">Корзина</li>
+            <form class="write-to-us" method="get" action="https://echo.htmlacademy.ru">
+              <label>
+                <input type="checkbox" checked>
+                <li class="filters-features-current filters-features-item">Слайдер</li>
+              </label>
+              <label>
+                <input type="checkbox">
+                <li class="filters-features-item">Блок преимуществ</li>
+              </label>
+              <label>
+                <input type="checkbox" checked>
+                <li class="filters-features-current filters-features-item">Новости</li>
+              </label>
+              <label>
+                <input type="checkbox">
+                <li class="filters-features-item">Галерея</li>
+              </label>
+              <label>
+                <input type="checkbox">
+                <li class="filters-features-item">Корзина</li>
+              </label>
+              
+            </form>
           </ul>
         </p>
-        <a class="button" href="#">Показать</a>
+        <button type="button" class="filters-button">Показать</a>
       </section>
 
       <section class="catalog">
@@ -78,7 +106,7 @@
               </a>
             </p>
             <p class="catalog-item-price">
-              <a class="button" href="#">9900 РУБ.</a>
+              <button type="button" class="catalog-item-button">9900 РУБ.</button>
             </p>
           </li>
           <li class="catalog-item">
@@ -90,7 +118,7 @@
               </a>
             </p>
             <p class="catalog-item-price">
-              <a class="button" href="#">9900 РУБ.</a>
+                <button type="button" class="catalog-item-button">9900 РУБ.</button>
             </p>
           </li>
           <li class="catalog-item">
@@ -102,7 +130,7 @@
               </a>
             </p>
             <p class="catalog-item-price">
-              <a class="button" href="#">9900 РУБ.</a>
+                <button type="button" class="catalog-item-button">9900 РУБ.</button>
             </p>
           </li>
         <li class="catalog-item">
@@ -114,7 +142,7 @@
               </a>
             </p>
             <p class="catalog-item-price">
-              <a class="button" href="#">9900 РУБ.</a>
+                <button type="button" class="catalog-item-button">9900 РУБ.</button>
             </p>
           </li>
           <li class="catalog-item">
@@ -126,7 +154,7 @@
               </a>
             </p>
             <p class="catalog-item-price">
-              <a class="button" href="#">9900 РУБ.</a>
+                <button type="button" class="catalog-item-button">9900 РУБ.</button>
             </p>
           </li>
           <li class="catalog-item">
@@ -138,7 +166,7 @@
               </a>
             </p>
             <p class="catalog-item-price">
-              <a class="button" href="#">9900 РУБ.</a>
+                <button type="button" class="catalog-item-button">9900 РУБ.</button>
             </p>
           </li>
         </ul>
@@ -156,21 +184,51 @@
           <p class="nerds-map-content">
               <span>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</span>
               <span>тел. +7 (812) 275-75-75</span>
-              <a class="button" href="#">Напишите нам</a>
+              <button type="button" class="nerds-map-button">Напишите нам</button>
           </p>
         </section>
 
     </main>
+    <form class="write-to-us" method="get" action="https://echo.htmlacademy.ru">
+
+      <b>Напишите нам</b>
+      <label for="name">Ваше имя:</label>
+      <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+
+      <label for="email">Ваш email:</label>
+      <input type="text" name="email" id="email" placeholder="email@example.com">
+
+      <label for="letter-text">Текст письма:</label>
+      <input type="text" name="letter-text" id="letter-text" placeholder="В свободной форме">
+      
+      <button type="submit" class="write-to-us-button">Отправить</button>
+    </form>
+
     <footer class="main-footer">
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Мы во Вконтакте</a></li>
-          <li><a class="social-button" href="#">Наша страница на Фейсбуке</a></li>
-          <li><a class="social-button" href="#">Наша страница в Инстаграм</a></li>
+          <li>
+            <a class="social-button" href="#" aria-label="Nerds во Вконтакте"></a>
+            <p class="social-button-image">
+              <img src="img/vk-icon.png" width="26" height="15" alt="Nerds во Вконтакте">
+            </p>
+          </li>
+          <li>
+            <a class="social-button" href="#" aria-label="Nerds на Фейсбуке"></a>
+            <p class="social-button-image">
+              <img src="img/fb-icon.png" width="12" height="22" alt="Nerds на Фейсбукеn">
+            </p>
+          </li>
+          <li>
+            <a class="social-button" href="#" aria-label="Nerds в Инстаграм"></a>
+            <p class="social-button-image">
+              <img src="img/insta-icon.png" width="21" height="21" alt="Nerds в Инстаграм">
+            </p>
+          </li>
         </ul>
       </div>
-        <h3>Давайте дружить, это выгодно!</h3>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+      <h3>Давайте дружить, это выгодно!</h3>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
   </body>
 </html>
