@@ -7,9 +7,7 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a href="index.html" class="main-header-logo">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Nerds»">
-        </a>
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Nerds»">
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
@@ -57,7 +55,7 @@
                 <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
             </p>
             <p class="services-item-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <button type="button" class="services-button">Заказать</button>
+            <a class="button" href="#">Заказать</a>
           </li>
           <li class="services-item">
             <h3 class="services-item-name">Приложения</h3>
@@ -65,7 +63,7 @@
                 <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
             </p>
             <p class="services-item-text">Покорите топ-10 приложений в AppStore и Google Play</p>
-            <button type="button" class="services-button">Заказать</button>
+            <a class="button" href="#">Заказать</a>
           </li>
           <li class="services-item">
             <h3 class="services-item-name">Презентации</h3>
@@ -73,7 +71,7 @@
                 <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
             </p>
             <p class="services-item-text">Вы даже не подозреваете, насколько вы изумительны!</p>
-            <button type="button" class="services-button">Заказать</button>
+            <a class="button" href="#">Заказать</a>
           </li>
         </ul>
       </section>
@@ -140,26 +138,13 @@
         <p class="nerds-map-content">
             <span>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</span>
             <span>тел. +7 (812) 275-75-75</span>
-            <button type="button" class="nerds-map-button">Напишите нам</button>
+            <a class="button" href="#">Напишите нам</a>
         </p>
         <p class="nerds-map-image">
           <img src="img/map-marker.png" width="231" height="190" alt="map-marker">
         </p>
       </section>
-      <form class="write-to-us" method="get" action="https://echo.htmlacademy.ru">
-
-        <b>Напишите нам</b>
-        <label for="name">Ваше имя:</label>
-        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-
-        <label for="email">Ваш email:</label>
-        <input type="text" name="email" id="email" placeholder="email@example.com">
-
-        <label for="letter-text">Текст письма:</label>
-        <input type="text" name="letter-text" id="letter-text" placeholder="В свободной форме">
-        
-        <button type="submit" class="write-to-us-button">Отправить</button>
-      </form>
+      
     </main>
 
     <footer class="main-footer">
@@ -167,26 +152,33 @@
         <ul>
           <li>
             <a class="social-button" href="#" aria-label="Nerds во Вконтакте"></a>
-            <p class="social-button-image">
-              <img src="img/vk-icon.png" width="26" height="15" alt="Nerds во Вконтакте">
-            </p>
           </li>
           <li>
             <a class="social-button" href="#" aria-label="Nerds на Фейсбуке"></a>
-            <p class="social-button-image">
-              <img src="img/fb-icon.png" width="12" height="22" alt="Nerds на Фейсбукеn">
-            </p>
           </li>
           <li>
             <a class="social-button" href="#" aria-label="Nerds в Инстаграм"></a>
-            <p class="social-button-image">
-              <img src="img/insta-icon.png" width="21" height="21" alt="Nerds в Инстаграм">
-            </p>
           </li>
         </ul>
       </div>
       <h3>Давайте дружить, это выгодно!</h3>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
+
+    <form class="write-to-us" method="POST" action="https://echo.htmlacademy.ru">
+
+      <h3>Напишите нам</h3>
+      <button type="button" class="write-to-us-close-button">Закрыть</button>
+      <label for="name">Ваше имя:</label>
+      <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+
+      <label for="email">Ваш email:</label>
+      <input type="text" name="email" id="email" placeholder="email@example.com" required>
+
+      <label for="letter-text">Текст письма:</label>
+      <input type="text" name="letter-text" id="letter-text" placeholder="В свободной форме" required>
+      
+      <button type="submit" class="write-to-us-button">Отправить</button>
+    </form>
   </body>
 </html>
