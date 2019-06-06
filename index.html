@@ -168,7 +168,6 @@
     <form class="write-to-us" method="POST" action="https://echo.htmlacademy.ru">
 
       <h3>Напишите нам</h3>
-      <button type="button" class="write-to-us-close-button">Закрыть</button>
       <label for="name">Ваше имя:</label>
       <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
 
@@ -176,9 +175,10 @@
       <input type="text" name="email" id="email" placeholder="email@example.com" required>
 
       <label for="letter-text">Текст письма:</label>
-      <input type="text" name="letter-text" id="letter-text" placeholder="В свободной форме" required>
+      <input type="textarea" name="letter-text" id="letter-text" placeholder="В свободной форме" required>
       
       <button type="submit" class="write-to-us-button">Отправить</button>
+      <button type="button" class="write-to-us-close-button">Закрыть</button>
     </form>
   </body>
 </html>
