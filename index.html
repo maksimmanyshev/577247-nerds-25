@@ -24,26 +24,29 @@
       <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
       
       <section class="slider">
-        <h2 class="visually-hidden">Как мы работаем</h2>
-        <ul class="slider-list">
-          <li class="slider-slide">
-            <h3 class="slider-slide-name">Долго, дорого, скрупулезно.</h3>
-            <p class="slider-slide-text">Математически выверенный дизайн  для вашего сайта или мобильного приложения.</p>
-            <a class="button" href="#">Узнать больше</a>
-          </li>
-
-          <li class="slider-slide">
-            <h3 class="slider-slide-name">Любим математику как никто другой</h3>
-            <p class="slider-slide-text">Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
-            <a class="button" href="#">Узнать больше</a>
-          </li>
-
-          <li class="slider-slide">
-            <h3 class="slider-slide-name">Только ночь, только хардкор</h3>
-            <p class="slider-slide-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a class="button" href="#">Узнать больше</a>
-          </li>
-        </ul>
+        <form class="slider-form" method="GET" action="https://echo.htmlacademy.ru">
+          <h2 class="visually-hidden">Как мы работаем</h2>
+          <fieldset class="slider-variants">
+            <label>
+              <h3 class="slider-slide-name">Долго, дорого, скрупулезно.</h3>
+              <p class="slider-slide-text">Математически выверенный дизайн  для вашего сайта или мобильного приложения.</p>
+              <a class="button" href="#">Узнать больше</a>
+              <input type="radio" name="slider-variant" id="first-slider" checked>
+            </label>
+            <label class="slider-variants">
+              <h3 class="slider-slide-name">Любим математику как никто другой</h3>
+              <p class="slider-slide-text">Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
+              <a class="button" href="#">Узнать больше</a>
+              <input type="radio" name="slider-variant" id="second-slider">
+            </label>
+            <label>
+              <h3 class="slider-slide-name">Только ночь, только хардкор</h3>
+              <p class="slider-slide-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <a class="button" href="#">Узнать больше</a>
+              <input type="radio" name="slider-variant" id="third-slider">
+            </label>
+          </fieldset>
+        </form>
       </section>
       
       <section class="services">
@@ -117,16 +120,16 @@
           <p class="projects-element">
             <ul class="projects-element-list">
               <li class="projects-element-image">
-                  <img src="img/logo-1.png" width="199" height="68" alt="HTML-academy-logo">
+                  <a href="#"><img src="img/logo-1.png" width="199" height="68" alt="HTML-academy-logo"></a>
               </li>
               <li class="projects-element-image">
-                <img src="img/logo-2.png" width="209" height="90" alt="Borodinski-logo">
+                <a href="#"><img src="img/logo-2.png" width="209" height="90" alt="Borodinski-logo"></a>
               </li>
               <li class="projects-element-image">
-                <img src="img/logo-3.png" width="185" height="52" alt="PINK-logo">
+                <a href="#"><img src="img/logo-3.png" width="185" height="52" alt="PINK-logo"></a>
               </li>
               <li class="projects-element-image">
-                <img src="img/logo-4.png" width="173" height="84" alt="Mishka-logo">
+                <a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Mishka-logo"></a>
               </li>
             </ul>
           </p>
