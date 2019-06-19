@@ -9,6 +9,14 @@ body {
     background-color: white;
 }
 
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+
 a {
     text-decoration: none;
 }
@@ -27,6 +35,10 @@ a {
 
 .slider-slide-text {
     line-height: 24px;
+}
+
+.slider-image {
+    background-image: url("../img/slide1.png");
 }
 
 .site-navigation,
@@ -117,36 +129,36 @@ a.button {
     color: #ffffff;
 }
 
-.services-item:nth-child(1) a:hover {
+.services-item:nth-child(2) a:hover {
     background-color: #e74246;
 }
 
-.services-item:nth-child(1) a:active {
+.services-item:nth-child(2) a:active {
     background-color: #d7373b;
 }
 
-.services-item:nth-child(2) a {
+.services-item:nth-child(3) a {
     background-color: #00ca74;
 }
 
-.services-item:nth-child(2) a:hover {
+.services-item:nth-child(3) a:hover {
     background-color: #00bc6c;
 }
 
-.services-item:nth-child(2) a:active {
+.services-item:nth-child(3) a:active {
     opacity: 0.3;
     background-color: #00aa62;
 }
 
-.services-item:nth-child(3) a {
+.services-item:nth-child(4) a {
     background-color: #efc84a;
 }
 
-.services-item:nth-child(3) a:hover {
+.services-item:nth-child(4) a:hover {
     background-color: #eab534;
 }
 
-.services-item:nth-child(3) a:active {
+.services-item:nth-child(4) a:active {
     opacity: 0.3;
     background-color: #e5a722;
 }
@@ -198,3 +210,156 @@ a.button {
     border: none;
     font-family: "Roboto Medium", Arial, sans-serif;
 }
+
+/* --------------------------------------------Сетка-------------------------------------------- */
+body {
+    width: 1440px;
+    background-image: url("../img/nerds-index.jpg");
+    background-repeat: no-repeat;
+}
+
+.main-header {
+    margin-bottom: 20px;
+    list-style: none;
+  }
+
+  .main-navigation {
+    display: flex;
+   }
+
+   .main-navigation-wrapper {
+    width: 100%;
+    display: flex;
+    /* Временно для сетки */
+    min-height: 115px;
+    margin: 0 140px;
+    align-items: flex-end;
+  }
+  
+   .main-header-logo {
+    width: 160px;
+    height: 65px;
+    margin-right: 200px; 
+  }
+  
+  .site-navigation {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+    
+    /* Временно для сетки */
+    min-width: 440px;
+    min-height: 45px;
+  }
+  
+  .user-navigation {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    list-style: none;
+    
+    /* Временно для сетки */
+    min-width: 120px;
+    min-height: 45px;
+  }
+
+
+  .slider {
+    margin: 0 140px;
+    padding: 0;
+    min-height: 410px;
+    display: flex;
+    list-style: none;
+    margin-bottom: 80px;
+  }
+
+  .slider-content {
+    min-width: 380px;
+    margin-right: auto;
+  }
+
+  .slider-image {
+    min-width: 760px;
+  }
+  
+  .services {
+    padding: 0;
+    display: flex;
+    margin: 0 140px;
+    margin-bottom: 80px;
+  }
+
+  .services-item {
+    min-width: 300px;
+    min-height: 350px;
+    margin-right: 100px;
+  }
+
+  .about-us {
+    padding: 0;
+    padding-bottom: 75px;
+    margin: 0 140px;
+    display: flex;
+    min-height: 450px; 
+  }
+
+  .about-us-content {
+    margin-top: 80px;
+    min-height: 370px;
+    min-width: 660px;
+  }
+
+  .about-us-statistics {
+    margin-left: auto;
+    margin-top: 40px;
+    min-width: 360px;
+  }
+
+.projects {
+    margin: 0 140px;
+    width: auto;
+    min-height: 180px;
+    margin-bottom: 80px;
+}
+
+.projects-element-list {
+    display: flex;
+    margin: 0;
+    margin-left: 30px;
+    padding: 0;
+  
+    list-style: none;
+    
+    /* Временно для сетки */
+    min-height: 180px;
+  }
+  
+  .projects-element-image {
+    width: 290px;
+    
+    /* Временно для сетки */
+    min-height: 180px;
+  }
+
+  .nerds-map {
+      min-height: 415px;
+  }
+
+  .main-footer {
+      display: flex;
+      margin: 0 140px;
+      margin-top: 70px;
+      height: 215px;
+  }
+
+  .footer-social {
+    min-width: 260px;
+    margin-right: 140px;
+    padding: 70px 0;
+  }
+
+  .footer-discount {
+    min-width: 560px;
+    padding: 80px 0;
+  }
