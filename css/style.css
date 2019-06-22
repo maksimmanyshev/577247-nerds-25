@@ -232,12 +232,6 @@ a.button {
     align-items: flex-end;
   }
   
-   .main-header-logo {
-    width: 160px;
-    height: 65px;
-    margin-right: 200px; 
-  }
-  
 .container {
     width: 1440px;
     align-items: center;
@@ -247,6 +241,7 @@ a.button {
 
   .site-navigation {
     margin: 0;
+    margin-left: 200px;
     padding: 0;
     
     list-style: none;
